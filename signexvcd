@@ -1,0 +1,31 @@
+$date
+	Thu Jun 27 17:35:39 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 32 ! out [31:0] $end
+$var reg 16 " in [15:0] $end
+$scope module signex $end
+$var wire 16 # wirein [15:0] $end
+$var wire 32 $ wireout [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#1
+b11111111111111111111011111011101 !
+b11111111111111111111011111011101 $
+b1111011111011101 "
+b1111011111011101 #
+#3

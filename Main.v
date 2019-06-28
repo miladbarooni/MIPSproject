@@ -1,7 +1,5 @@
-// module Memmux;
-`include "Memmux.v"
-module Main(
-    output [31:0] cycle,
+
+module Main(    output [31:0] cycle,
     output [31:0] PC,
     output [31:0] ALUout,
     input clk,
@@ -34,8 +32,7 @@ reg[31:0] PC = 128;
 wire [4:0] instructionmuxout;
 
 // The datapath wires
-wire[31:0] pcmuxout,ALURegOut, MemData, BRegOut
-          ;
+wire[31:0] pcmuxout,ALURegOut, MemData, BRegOut;
 
 
 // to chose between pc or aluregout

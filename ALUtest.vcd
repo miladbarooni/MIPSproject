@@ -1,0 +1,42 @@
+$date
+	Thu Jun 27 19:05:51 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ALUtest $end
+$var wire 1 ! Zero $end
+$var wire 32 " ALUResult [31:0] $end
+$var reg 32 # SrcA [31:0] $end
+$var reg 32 $ SrcB [31:0] $end
+$var reg 4 % operation [3:0] $end
+$scope module ALU1 $end
+$var wire 32 & SrcA [31:0] $end
+$var wire 32 ' SrcB [31:0] $end
+$var wire 4 ( operation [3:0] $end
+$var reg 32 ) ALUResult [31:0] $end
+$var reg 1 ! Zero $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10010100111011010000110110101000 )
+b10 (
+b11100110010001111001010100110010 '
+b10101110101001010111100001110110 &
+b10 %
+b11100110010001111001010100110010 $
+b10101110101001010111100001110110 #
+b10010100111011010000110110101000 "
+0!
+$end
+#10
+b11101110111001111111110101110110 "
+b11101110111001111111110101110110 )
+b1 %
+b1 (
+#20

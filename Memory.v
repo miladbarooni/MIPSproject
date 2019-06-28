@@ -5,7 +5,7 @@ input wire MemWrite, MemRead,
 input wire clk,                  // All synchronous elements, including memories, should have a clock signal
 output wire [31:0] read_data      // Output of Memory Address Contents
 );
-// a 256 two word memory
+// a 512 two word memory
 reg [31:0] MEMO[511:0]; 
 
 
