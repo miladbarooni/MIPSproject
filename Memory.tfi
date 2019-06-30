@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+Memory instance_name (
+    .addr(addr), 
+    .write_data(write_data), 
+    .MemWrite(MemWrite), 
+    .clk(clk), 
+    .read_data(read_data)
+    );
+
+

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Aria/Desktop/arch_project/MIPSproject/ALU.xst" -ofn "C:/Users/Aria/Desktop/arch_project/MIPSproject/ALU.syr" 
+vhdtdtfi -lang verilog -prj MIPSproject -o C:/Users/Aria/Desktop/arch_project/MIPSproject/ALU.tfi -lib work C:/Users/Aria/Desktop/arch_project/MIPSproject//ALU.v -module ALU -template D:/Programs/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

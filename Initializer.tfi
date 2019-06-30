@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+Initializer instance_name (
+    .initiate(initiate), 
+    .PC_in(PC_in), 
+    .reset(reset)
+    );
+
+

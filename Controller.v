@@ -1,5 +1,27 @@
-module control (clk, reset, Op, Zero, IorD, MemRead, MemWrite, MemtoReg, IRWrite,
-PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCSel, ALUOp);
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    15:18:26 06/28/2019 
+// Design Name: 
+// Module Name:    Controller 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module Controller (clk, reset, Op, Zero, IorD, MemWrite, MemtoReg, IRWrite,
+PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
+
+
 
 	input clk;
 	input reset;
@@ -8,22 +30,34 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCSel, ALUOp);
 
 	output reg IorD;
 	output reg MemWrite;
-	output reg MemRead;
 	output reg MemtoReg;
 	output reg IRWrite;
-	output reg PCSource;
+	output reg PCSrc;
 	output reg RegDst;
 	output reg RegWrite;
 	output reg ALUSrcA;
 	output reg [1:0] ALUSrcB;
-	output PCSel;
+	output wire PCEn;
 	output reg [1:0] ALUOp;
 
+	initial begin
+		//IorD = 0;
+		//IRWrite = 1;
+		//MemWrite = 0;
+		//PCWrite = 1;
+		//ALUSrcA = 0;
+		//ALUSrcB = 1;
+		//RegWrite = 0;
+		//PCSrc = 0;
+		//RegDst = 0;
+		//MemtoReg = 0;
+	end
+
 	reg PCWrite;
-	reg PCWriteCond;
+	reg PCWriteCond; 
 
 	assign
-		PCSel = (PCWrite | (PCWriteCond & Zero));
+		PCEn = (PCWrite | (PCWriteCond & Zero));
 
 	//states
 	parameter FETCH = 4'b0000;
@@ -42,7 +76,7 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCSel, ALUOp);
   always@(posedge clk)
     if (reset)
 		state <= FETCH;
-    else
+      else
 		state <= nextstate;
 
 
@@ -75,13 +109,12 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCSel, ALUOp);
 
 	always@(state) begin
 
-	IorD=1'b0; MemRead=1'b0; MemWrite=1'b0; MemtoReg=1'b0; IRWrite=1'b0; PCSource=1'b0;
+	IorD=1'b0; MemWrite=1'b0; MemtoReg=1'b0; IRWrite=1'b0; PCSrc=1'b0;
 	ALUSrcB=2'b00; ALUSrcA=1'b0; RegWrite=1'b0; RegDst=1'b0; PCWrite=1'b0; PCWriteCond=1'b0; ALUOp=2'b00;
 
     	case (state)
         FETCH:
           begin
-            MemRead = 1'b1;
             IRWrite = 1'b1;
             ALUSrcB = 2'b01;
             PCWrite = 1'b1;
@@ -90,12 +123,12 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCSel, ALUOp);
 	    ALUSrcB = 2'b11;
         MEMADRCOMP:
           begin
+				
             ALUSrcA = 1'b1;
             ALUSrcB = 2'b10;
           end
         MEMACCESSL:
           begin
-            MemRead = 1'b1;
             IorD    = 1'b1;
           end
         MEMREADEND:
@@ -124,7 +157,7 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCSel, ALUOp);
             ALUSrcA = 1'b1;
             ALUOp   = 2'b01;
             PCWriteCond = 1'b1;
-	    PCSource = 2'b01;
+	    PCSrc = 2'b01;
           end
       endcase
     end

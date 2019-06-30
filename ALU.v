@@ -1,3 +1,23 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    15:14:33 06/28/2019 
+// Design Name: 
+// Module Name:    ALU 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 module ALU(
     input [31:0] SrcA, SrcB,
     // from control unit (ALU control)
@@ -5,6 +25,10 @@ module ALU(
     output reg [31:0] ALUResult,
     output reg Zero
 );
+
+initial begin
+Zero = 0;
+end
 
 always @(operation, SrcA, SrcB)begin
   if (operation == 4'b0010) begin
@@ -46,21 +70,3 @@ always @(operation, SrcA, SrcB)begin
 end
 endmodule
 
-
-module ALUtest;
-reg [31:0] SrcA, SrcB;
-reg [3:0] operation;
-wire [31:0] ALUResult;
-wire Zero;
-ALU ALU1(SrcA, SrcB, operation, ALUResult, Zero);
-initial begin
-  $dumpfile("ALUtest.vcd");
-  $dumpvars(0, ALUtest);
-  operation = 4'b0010;
-  SrcA = 32'b10101110101001010111100001110110;
-  SrcB = 32'b11100110010001111001010100110010;
-  #10;
-  operation = 4'b0001;
-  #10 $finish;
-end
-endmodule

@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+RegfileOut instance_name (
+    .A(A), 
+    .B(B), 
+    .clk(clk), 
+    .A_out(A_out), 
+    .B_out(B_out)
+    );
+
+

@@ -1,0 +1,55 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Aria/Desktop/arch_project/MIPSproject/Test_DataPath2_isim_beh.exe" -prj "C:/Users/Aria/Desktop/arch_project/MIPSproject/Test_DataPath2_beh.prj" "work.Test_DataPath2" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/WriteData.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/SrcBMux.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/SrcAMux.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/SignEx.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/RegfileOut.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/Regfile.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/RegDstMux.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/PC.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/MemtoRegMux.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/Memory.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/MemMux.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/IR.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/Initializer.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/Controller.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/ALUOutMux.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/ALUout.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/ALUcontrol.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/DataPath.v" into library work
+Analyzing Verilog file "C:/Users/Aria/Desktop/arch_project/MIPSproject/Test_DataPath2.v" into library work
+Analyzing Verilog file "D:/Programs/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Initializer
+Compiling module PC
+Compiling module MemMux
+Compiling module Memory
+Compiling module IR
+Compiling module WriteData
+Compiling module Controller
+Compiling module RegDstMux
+Compiling module MemtoRegMux
+Compiling module Regfile
+Compiling module SignEx
+Compiling module RegfileOut
+Compiling module SrcAMux
+Compiling module SrcBMux
+Compiling module ALUcontrol
+Compiling module ALU
+Compiling module ALUout
+Compiling module ALUOutMux
+Compiling module DataPath
+Compiling module Test_DataPath2
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable C:/Users/Aria/Desktop/arch_project/MIPSproject/Test_DataPath2_isim_beh.exe
+Fuse Memory Usage: 28924 KB
+Fuse CPU Usage: 359 ms

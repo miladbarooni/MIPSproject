@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+WriteData instance_name (
+    .clk(clk), 
+    .read_data(read_data), 
+    .data(data)
+    );
+
+

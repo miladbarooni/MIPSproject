@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+MemtoRegMux instance_name (
+    .wb(wb), 
+    .data(data), 
+    .MemtoReg(MemtoReg), 
+    .out(out)
+    );
+
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Aria/Desktop/arch_project/MIPSproject/Test_DataPath2_isim_beh.exe" -prj "C:/Users/Aria/Desktop/arch_project/MIPSproject/Test_DataPath2_beh.prj" "work.Test_DataPath2" "work.glbl" 

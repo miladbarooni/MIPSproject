@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+ALUOutMux instance_name (
+    .ALUout(ALUout), 
+    .ALUResutl(ALUResutl), 
+    .PCSrc(PCSrc), 
+    .out(out)
+    );
+
+

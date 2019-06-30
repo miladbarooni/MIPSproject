@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+ALUout instance_name (
+    .clk(clk), 
+    .ALUResult(ALUResult), 
+    .aluout(aluout)
+    );
+
+

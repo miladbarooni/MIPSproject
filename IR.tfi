@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+IR instance_name (
+    .IRWrite(IRWrite), 
+    .clk(clk), 
+    .Inst(Inst), 
+    .Out(Out)
+    );
+
+

@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+SrcBMux instance_name (
+    .B(B), 
+    .exsign(exsign), 
+    .ALUSrcB(ALUSrcB), 
+    .muxout(muxout)
+    );
+
+

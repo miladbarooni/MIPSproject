@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+MemMux instance_name (
+    .PC_out(PC_out), 
+    .ALUOut(ALUOut), 
+    .IorD(IorD), 
+    .out(out)
+    );
+
+

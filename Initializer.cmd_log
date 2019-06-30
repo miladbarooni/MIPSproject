@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj MIPSproject -o C:/Users/Aria/Desktop/arch_project/MIPSproject/Initializer.tfi -lib work C:/Users/Aria/Desktop/arch_project/MIPSproject//Initializer.v -module Initializer -template D:/Programs/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj MIPSproject -o C:/Users/Aria/Desktop/arch_project/MIPSproject/Initializer.tfi -lib work C:/Users/Aria/Desktop/arch_project/MIPSproject//Initializer.v -module Initializer -template D:/Programs/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

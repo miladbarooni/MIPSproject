@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+SrcAMux instance_name (
+    .A(A), 
+    .Pc(Pc), 
+    .ALUSrcA(ALUSrcA), 
+    .muxout(muxout)
+    );
+
+

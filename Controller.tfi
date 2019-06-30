@@ -1,0 +1,23 @@
+
+
+
+// Instantiate the module
+Controller instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .Op(Op), 
+    .Zero(Zero), 
+    .IorD(IorD), 
+    .MemWrite(MemWrite), 
+    .MemtoReg(MemtoReg), 
+    .IRWrite(IRWrite), 
+    .PCSrc(PCSrc), 
+    .ALUSrcB(ALUSrcB), 
+    .ALUSrcA(ALUSrcA), 
+    .RegWrite(RegWrite), 
+    .RegDst(RegDst), 
+    .PCSel(PCSel), 
+    .ALUOp(ALUOp)
+    );
+
+

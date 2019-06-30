@@ -1,3 +1,23 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    15:20:07 06/28/2019 
+// Design Name: 
+// Module Name:    RegfileOut 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 module RegfileOut(
     input [31:0] A,
     input [31:0] B,
@@ -10,4 +30,4 @@ always @(clk)begin
     B_out <= B;
 end
 
-endmodule
+endmodule 

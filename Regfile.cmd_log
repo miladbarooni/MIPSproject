@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj MIPSproject -o C:/Users/Aria/Desktop/arch_project/MIPSproject/Regfile.tfi -lib work C:/Users/Aria/Desktop/arch_project/MIPSproject//Regfile.v -module Regfile -template D:/Programs/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

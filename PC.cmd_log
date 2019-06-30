@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj MIPSproject -o C:/Users/Aria/Desktop/arch_project/MIPSproject/PC.tfi -lib work C:/Users/Aria/Desktop/arch_project/MIPSproject//PC.v -module PC -template D:/Programs/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj MIPSproject -o C:/Users/Aria/Desktop/arch_project/MIPSproject/PC.tfi -lib work C:/Users/Aria/Desktop/arch_project/MIPSproject//PC.v -module PC -template D:/Programs/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
