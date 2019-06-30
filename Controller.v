@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Controller (clk, reset, Op, Zero, IorD, MemWrite, MemtoReg, IRWrite,
+module Controller (clk, reset, Op, Zero, INT, INTD, NMI, IorD, MemWrite, MemtoReg, IRWrite,
 PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 
 
@@ -27,6 +27,9 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 	input reset;
 	input [5:0] Op;
 	input Zero;
+	input INT;
+	input INTD;
+	input NMI;
 
 	output reg IorD;
 	output reg MemWrite;
@@ -39,18 +42,11 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 	output reg [1:0] ALUSrcB;
 	output wire PCEn;
 	output reg [1:0] ALUOp;
+	
+	reg NMI_FLAG;
 
 	initial begin
-		//IorD = 0;
-		//IRWrite = 1;
-		//MemWrite = 0;
-		//PCWrite = 1;
-		//ALUSrcA = 0;
-		//ALUSrcB = 1;
-		//RegWrite = 0;
-		//PCSrc = 0;
-		//RegDst = 0;
-		//MemtoReg = 0;
+		NMI_FLAG = 0;
 	end
 
 	reg PCWrite;
@@ -69,9 +65,18 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 	parameter EXECUTION = 4'b0110;
 	parameter RTYPEEND = 4'b0111;
 	parameter BEQ = 4'b1000;
+	
+	parameter INTERRUPT = 4'b1111;
+	parameter INTERRUPT_2 = 4'b1110;
+	parameter NMI_INTERRUPT = 4'b1101;
 
 	reg [3:0] state;
 	reg [3:0] nextstate;
+
+  always@(posedge NMI) begin
+		NMI_FLAG = 1;
+  end
+  
 
   always@(posedge clk)
     if (reset)
@@ -82,7 +87,43 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 
 	always@(state or Op) begin
       	case (state)
-        FETCH:  nextstate = DECODE;
+			
+		  NMI_INTERRUPT:
+		  begin
+				nextstate = NMI_INTERRUPT;
+		  end
+			
+		  INTERRUPT:
+		  begin
+				if ((INT == 1) & (INTD == 0)) begin
+				nextstate = INTERRUPT_2;
+				end
+				else begin
+				nextstate = FETCH;
+				end		  
+		  end
+		  
+		  
+		  INTERRUPT_2:
+		  begin
+				if ((INT == 1) & (INTD == 0)) begin
+				nextstate = INTERRUPT;
+				end
+				else begin
+				nextstate = FETCH;
+				end		  
+		  end
+
+		  
+        FETCH:  
+		  begin
+				//if (INT & (~INTD)) begin
+				//nextstate = INTERRUPT;
+				//end
+				//else begin
+				nextstate = DECODE;
+				//end
+		  end
         DECODE:  case(Op)
 					//OpCode
                    6'b100011:	nextstate = MEMADRCOMP;//lw
@@ -97,11 +138,52 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
                    default: nextstate = FETCH;
                  endcase
         MEMACCESSL:    nextstate = MEMREADEND;
-        MEMREADEND:    nextstate = FETCH;
-        MEMACCESSS:    nextstate = FETCH;
+        MEMREADEND: begin
+				
+		  	   if (INT & (~INTD)) begin
+				nextstate = INTERRUPT;
+				end
+				else begin
+				nextstate = FETCH;
+				end
+				if (NMI_FLAG == 1) begin
+					nextstate  = NMI_INTERRUPT;
+				end
+		  end
+        MEMACCESSS: begin
+		  	   if (INT & (~INTD)) begin
+				nextstate = INTERRUPT;
+				end
+				else begin
+				nextstate = FETCH;
+				end
+				if (NMI_FLAG == 1) begin
+					nextstate  = NMI_INTERRUPT;
+				end
+		  end
         EXECUTION: nextstate = RTYPEEND;
-        RTYPEEND: nextstate = FETCH;
-        BEQ:   nextstate = FETCH;
+        RTYPEEND: begin
+		  	   if (INT & (~INTD)) begin
+				nextstate = INTERRUPT;
+				end
+				else begin
+				nextstate = FETCH;
+				end
+				if (NMI_FLAG == 1) begin
+					nextstate  = NMI_INTERRUPT;
+				end
+		  end
+        BEQ: begin
+		  	   if (INT & (~INTD)) begin
+				nextstate = INTERRUPT;
+				end
+				else begin
+				nextstate = FETCH;
+				end
+				if (NMI_FLAG == 1) begin
+					nextstate  = NMI_INTERRUPT;
+				end
+		  end
         default: nextstate = FETCH;
       endcase
     end
@@ -113,6 +195,37 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 	ALUSrcB=2'b00; ALUSrcA=1'b0; RegWrite=1'b0; RegDst=1'b0; PCWrite=1'b0; PCWriteCond=1'b0; ALUOp=2'b00;
 
     	case (state)
+		  NMI_INTERRUPT:
+			begin
+				IRWrite = 0;
+				RegWrite = 0;
+				MemWrite = 0;
+				PCWrite = 0;
+				PCWriteCond = 0;
+				ALUSrcA  = 1;
+			end	
+		
+		  INTERRUPT:
+			begin
+				IRWrite = 0;
+				RegWrite = 0;
+				MemWrite = 0;
+				PCWrite = 0;
+				PCWriteCond = 0;
+				ALUSrcA  = 1;
+			end		  
+			
+			INTERRUPT_2:
+			begin
+				IRWrite = 0;
+				RegWrite = 0;
+				MemWrite = 0;
+				PCWrite = 0;
+				PCWriteCond = 0;
+				ALUSrcA  = 1;
+			end
+		  
+		  
         FETCH:
           begin
             IRWrite = 1'b1;

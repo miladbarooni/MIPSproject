@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Aria/Desktop/arch_project/MIPSproject/ALUOutMux.v";
+static const char *ng0 = "D:/Uni/Arch/project/MIPSproject/ALUOutMux.v";
 
 
 

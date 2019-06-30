@@ -105,43 +105,43 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\WriteData.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\WriteData.v" into library work
 Parsing module <WriteData>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\SrcBMux.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\SrcBMux.v" into library work
 Parsing module <SrcBMux>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\SrcAMux.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\SrcAMux.v" into library work
 Parsing module <SrcAMux>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\SignEx.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\SignEx.v" into library work
 Parsing module <SignEx>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\RegfileOut.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\RegfileOut.v" into library work
 Parsing module <RegfileOut>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\Regfile.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\Regfile.v" into library work
 Parsing module <Regfile>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\RegDstMux.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\RegDstMux.v" into library work
 Parsing module <RegDstMux>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\PC.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\PC.v" into library work
 Parsing module <PC>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\MemtoRegMux.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\MemtoRegMux.v" into library work
 Parsing module <MemtoRegMux>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\Memory.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\Memory.v" into library work
 Parsing module <Memory>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\MemMux.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\MemMux.v" into library work
 Parsing module <MemMux>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\IR.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\IR.v" into library work
 Parsing module <IR>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\Initializer.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\Initializer.v" into library work
 Parsing module <Initializer>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\Controller.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\Controller.v" into library work
 Parsing module <Controller>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\ALUOutMux.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\ALUOutMux.v" into library work
 Parsing module <ALUOutMux>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\ALUout.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\ALUout.v" into library work
 Parsing module <ALUout>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\ALUcontrol.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\ALUcontrol.v" into library work
 Parsing module <ALUcontrol>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\ALU.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\ALU.v" into library work
 Parsing module <ALU>.
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\DataPath.v" into library work
 Parsing module <DataPath>.
 
 =========================================================================
@@ -163,6 +163,8 @@ Elaborating module <IR>.
 Elaborating module <WriteData>.
 
 Elaborating module <Controller>.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 93: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 103: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <RegDstMux>.
 
@@ -173,49 +175,48 @@ Elaborating module <Regfile>.
 Elaborating module <SignEx>.
 
 Elaborating module <RegfileOut>.
-WARNING:HDLCompiler:91 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\RegfileOut.v" Line 29: Signal <A> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\RegfileOut.v" Line 30: Signal <B> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\RegfileOut.v" Line 29: Signal <A> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\RegfileOut.v" Line 30: Signal <B> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <SrcAMux>.
 
 Elaborating module <SrcBMux>.
 
 Elaborating module <ALUcontrol>.
-WARNING:HDLCompiler:91 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\ALUcontrol.v" Line 69: Signal <opcode> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\ALUcontrol.v" Line 73: Signal <opcode> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\ALUcontrol.v" Line 77: Signal <opcode> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\ALUcontrol.v" Line 81: Signal <opcode> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\ALUcontrol.v" Line 69: Signal <opcode> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\ALUcontrol.v" Line 73: Signal <opcode> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\ALUcontrol.v" Line 77: Signal <opcode> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <ALU>.
 
 Elaborating module <ALUout>.
 
 Elaborating module <ALUOutMux>.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 65. All outputs of instance <Initializer1> of block <Initializer> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 73. All outputs of instance <PC1> of block <PC> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 81. All outputs of instance <MemMux1> of block <MemMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 89. All outputs of instance <Memory1> of block <Memory> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 97. All outputs of instance <IR1> of block <IR> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 104. All outputs of instance <WriteData1> of block <WriteData> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 111. All outputs of instance <Controller1> of block <Controller> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 130. All outputs of instance <RegDstMux1> of block <RegDstMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 138. All outputs of instance <MemtoRegMux1> of block <MemtoRegMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 146. All outputs of instance <Regfile1> of block <Regfile> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 159. All outputs of instance <SignEx1> of block <SignEx> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 166. All outputs of instance <RegfileOut1> of block <RegfileOut> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 175. All outputs of instance <SrcAMux1> of block <SrcAMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 183. All outputs of instance <SrcBMux2> of block <SrcBMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 192. All outputs of instance <ALUcontrol1> of block <ALUcontrol> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 202. All outputs of instance <ALU1> of block <ALU> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 211. All outputs of instance <ALUout1> of block <ALUout> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v" line 218. All outputs of instance <ALUOutMux1> of block <ALUOutMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 68. All outputs of instance <Initializer1> of block <Initializer> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 76. All outputs of instance <PC1> of block <PC> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 84. All outputs of instance <MemMux1> of block <MemMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 92. All outputs of instance <Memory1> of block <Memory> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 100. All outputs of instance <IR1> of block <IR> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 107. All outputs of instance <WriteData1> of block <WriteData> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 114. All outputs of instance <Controller1> of block <Controller> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 136. All outputs of instance <RegDstMux1> of block <RegDstMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 144. All outputs of instance <MemtoRegMux1> of block <MemtoRegMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 152. All outputs of instance <Regfile1> of block <Regfile> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 165. All outputs of instance <SignEx1> of block <SignEx> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 172. All outputs of instance <RegfileOut1> of block <RegfileOut> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 181. All outputs of instance <SrcAMux1> of block <SrcAMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 189. All outputs of instance <SrcBMux2> of block <SrcBMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 198. All outputs of instance <ALUcontrol1> of block <ALUcontrol> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 208. All outputs of instance <ALU1> of block <ALU> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 217. All outputs of instance <ALUout1> of block <ALUout> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 224. All outputs of instance <ALUOutMux1> of block <ALUOutMux> are unconnected in block <DataPath>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <DataPath>.
-    Related source file is "C:\Users\Aria\Desktop\arch_project\MIPSproject\DataPath.v".
+    Related source file is "D:\Uni\Arch\project\MIPSproject\DataPath.v".
     Summary:
 	no macro.
 Unit <DataPath> synthesized.
@@ -291,7 +292,7 @@ Slice Logic Distribution:
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           2
+ Number of IOs:                           5
  Number of bonded IOBs:                   0  out of    210     0%  
 
 Specific Feature Utilization:
@@ -342,13 +343,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.05 secs
+Total CPU time to Xst completion: 9.82 secs
  
 --> 
 
-Total memory usage is 466668 kilobytes
+Total memory usage is 466700 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   24 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

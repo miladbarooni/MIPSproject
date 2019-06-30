@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Aria/Desktop/arch_project/MIPSproject/ALUcontrol.v";
+static const char *ng0 = "D:/Uni/Arch/project/MIPSproject/ALUcontrol.v";
 static unsigned int ng1[] = {2U, 0U};
 static unsigned int ng2[] = {0U, 0U};
 static unsigned int ng3[] = {1U, 0U};
@@ -31,7 +31,7 @@ static unsigned int ng6[] = {12U, 0U};
 static unsigned int ng7[] = {3U, 0U};
 static unsigned int ng8[] = {8U, 0U};
 static unsigned int ng9[] = {13U, 0U};
-static unsigned int ng10[] = {10U, 0U};
+static unsigned int ng10[] = {42U, 0U};
 
 
 
@@ -2333,9 +2333,9 @@ LAB300:    t8 = (t6 + 4);
 
 LAB302:
 LAB303:    xsi_set_current_line(81, ng0);
-    t2 = (t0 + 1528U);
+    t2 = (t0 + 1048U);
     t3 = *((char **)t2);
-    t2 = ((char*)((ng10)));
+    t2 = ((char*)((ng3)));
     memset(t6, 0, 8);
     t4 = (t3 + 4);
     t5 = (t2 + 4);
@@ -2359,17 +2359,60 @@ LAB305:    if (t18 != 0)
 
 LAB306:    *((unsigned int *)t6) = 1;
 
-LAB308:    t8 = (t6 + 4);
-    t27 = *((unsigned int *)t8);
-    t28 = (~(t27));
-    t29 = *((unsigned int *)t6);
-    t30 = (t29 & t28);
-    t31 = (t30 != 0);
-    if (t31 > 0)
-        goto LAB309;
+LAB308:    t8 = (t0 + 1368U);
+    t21 = *((char **)t8);
+    t8 = ((char*)((ng10)));
+    memset(t24, 0, 8);
+    t22 = (t21 + 4);
+    t23 = (t8 + 4);
+    t27 = *((unsigned int *)t21);
+    t28 = *((unsigned int *)t8);
+    t29 = (t27 ^ t28);
+    t30 = *((unsigned int *)t22);
+    t31 = *((unsigned int *)t23);
+    t32 = (t30 ^ t31);
+    t33 = (t29 | t32);
+    t34 = *((unsigned int *)t22);
+    t35 = *((unsigned int *)t23);
+    t36 = (t34 | t35);
+    t37 = (~(t36));
+    t38 = (t33 & t37);
+    if (t38 != 0)
+        goto LAB312;
 
-LAB310:
-LAB311:    goto LAB2;
+LAB309:    if (t36 != 0)
+        goto LAB311;
+
+LAB310:    *((unsigned int *)t24) = 1;
+
+LAB312:    t41 = *((unsigned int *)t6);
+    t42 = *((unsigned int *)t24);
+    t43 = (t41 & t42);
+    *((unsigned int *)t40) = t43;
+    t26 = (t6 + 4);
+    t39 = (t24 + 4);
+    t44 = (t40 + 4);
+    t47 = *((unsigned int *)t26);
+    t48 = *((unsigned int *)t39);
+    t49 = (t47 | t48);
+    *((unsigned int *)t44) = t49;
+    t50 = *((unsigned int *)t44);
+    t51 = (t50 != 0);
+    if (t51 == 1)
+        goto LAB313;
+
+LAB314:
+LAB315:    t54 = (t40 + 4);
+    t73 = *((unsigned int *)t54);
+    t74 = (~(t73));
+    t75 = *((unsigned int *)t40);
+    t76 = (t75 & t74);
+    t77 = (t76 != 0);
+    if (t77 > 0)
+        goto LAB316;
+
+LAB317:
+LAB318:    goto LAB2;
 
 LAB8:    t21 = (t6 + 4);
     *((unsigned int *)t6) = 1;
@@ -3460,13 +3503,45 @@ LAB307:    t7 = (t6 + 4);
     *((unsigned int *)t7) = 1;
     goto LAB308;
 
-LAB309:    xsi_set_current_line(81, ng0);
+LAB311:    t25 = (t24 + 4);
+    *((unsigned int *)t24) = 1;
+    *((unsigned int *)t25) = 1;
+    goto LAB312;
 
-LAB312:    xsi_set_current_line(82, ng0);
-    t21 = ((char*)((ng5)));
-    t22 = (t0 + 1928);
-    xsi_vlogvar_wait_assign_value(t22, t21, 0, 0, 4, 0LL);
-    goto LAB311;
+LAB313:    t52 = *((unsigned int *)t40);
+    t53 = *((unsigned int *)t44);
+    *((unsigned int *)t40) = (t52 | t53);
+    t45 = (t6 + 4);
+    t46 = (t24 + 4);
+    t56 = *((unsigned int *)t6);
+    t57 = (~(t56));
+    t58 = *((unsigned int *)t45);
+    t59 = (~(t58));
+    t60 = *((unsigned int *)t24);
+    t61 = (~(t60));
+    t62 = *((unsigned int *)t46);
+    t63 = (~(t62));
+    t64 = (t57 & t59);
+    t65 = (t61 & t63);
+    t66 = (~(t64));
+    t67 = (~(t65));
+    t68 = *((unsigned int *)t44);
+    *((unsigned int *)t44) = (t68 & t66);
+    t69 = *((unsigned int *)t44);
+    *((unsigned int *)t44) = (t69 & t67);
+    t70 = *((unsigned int *)t40);
+    *((unsigned int *)t40) = (t70 & t66);
+    t71 = *((unsigned int *)t40);
+    *((unsigned int *)t40) = (t71 & t67);
+    goto LAB315;
+
+LAB316:    xsi_set_current_line(81, ng0);
+
+LAB319:    xsi_set_current_line(82, ng0);
+    t55 = ((char*)((ng5)));
+    t72 = (t0 + 1928);
+    xsi_vlogvar_wait_assign_value(t72, t55, 0, 0, 4, 0LL);
+    goto LAB318;
 
 }
 

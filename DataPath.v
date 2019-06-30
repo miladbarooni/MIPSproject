@@ -21,7 +21,10 @@
 
 module DataPath(    
 	input clk,
-	input initiate
+	input initiate,
+	input INT,
+	input INTD,
+	input NMI
 );
 
 	// controller variables
@@ -113,6 +116,9 @@ module DataPath(
 	 .reset(reset),
     .Op(Instr[31:26]), 
     .Zero(Zero), 
+	 .INT(INT),
+	 .INTD(INTD),
+	 .NMI(NMI),
     .IorD(IorD), 
     .MemWrite(MemWrite), 
     .MemtoReg(MemtoReg), 

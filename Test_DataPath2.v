@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   18:53:25 06/29/2019
+// Create Date:   13:37:09 06/30/2019
 // Design Name:   DataPath
-// Module Name:   C:/Users/Aria/Desktop/arch_project/MIPSproject/Test_DataPath2.v
+// Module Name:   D:/Uni/Arch/project/MIPSproject/Test_DataPath2.v
 // Project Name:  MIPSproject
 // Target Device:  
 // Tool versions:  
@@ -27,30 +27,49 @@ module Test_DataPath2;
 	// Inputs
 	reg clk;
 	reg initiate;
+	reg INT;
+	reg INTD;
+	reg NMI;
 
 	// Instantiate the Unit Under Test (UUT)
 	DataPath uut (
 		.clk(clk), 
-		.initiate(initiate)
+		.initiate(initiate), 
+		.INT(INT), 
+		.INTD(INTD), 
+		.NMI(NMI)
 	);
 
 	initial begin
 		// Initialize Inputs
 		clk = 0;
 		initiate = 0;
-		#60;
-		initiate = 1;
+		INT = 0;
+		INTD = 0;
+		NMI = 0;
 
 		// Wait 100 ns for global reset to finish
+		#60;
+		initiate = 1;
 		#100;
+		INT = 1;
+		
+		#2000;
+		INTD = 1;
+		
+		#200;
+		NMI = 1;
+		
+		#200;
+		NMI = 0;
         
 		// Add stimulus here
 
 	end
 	
 	always begin
-	#50;
-	clk = ~clk;
+		#50;
+		clk = ~clk;
 	end
       
 endmodule

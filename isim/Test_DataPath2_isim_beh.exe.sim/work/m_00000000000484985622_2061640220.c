@@ -21,56 +21,102 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Aria/Desktop/arch_project/MIPSproject/Test_DataPath2.v";
+static const char *ng0 = "D:/Uni/Arch/project/MIPSproject/Test_DataPath2.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
 
 
 
-static void Initial_37_0(char *t0)
+static void Initial_43_0(char *t0)
 {
     char *t1;
     char *t2;
     char *t3;
 
-LAB0:    t1 = (t0 + 2368U);
+LAB0:    t1 = (t0 + 2848U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(37, ng0);
+LAB2:    xsi_set_current_line(43, ng0);
 
-LAB4:    xsi_set_current_line(39, ng0);
+LAB4:    xsi_set_current_line(45, ng0);
     t2 = ((char*)((ng1)));
     t3 = (t0 + 1288);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
-    xsi_set_current_line(40, ng0);
+    xsi_set_current_line(46, ng0);
     t2 = ((char*)((ng1)));
     t3 = (t0 + 1448);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
-    xsi_set_current_line(41, ng0);
-    t2 = (t0 + 2176);
+    xsi_set_current_line(47, ng0);
+    t2 = ((char*)((ng1)));
+    t3 = (t0 + 1608);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    xsi_set_current_line(48, ng0);
+    t2 = ((char*)((ng1)));
+    t3 = (t0 + 1768);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    xsi_set_current_line(49, ng0);
+    t2 = ((char*)((ng1)));
+    t3 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    xsi_set_current_line(52, ng0);
+    t2 = (t0 + 2656);
     xsi_process_wait(t2, 60000LL);
     *((char **)t1) = &&LAB5;
 
 LAB1:    return;
-LAB5:    xsi_set_current_line(42, ng0);
+LAB5:    xsi_set_current_line(53, ng0);
     t2 = ((char*)((ng2)));
     t3 = (t0 + 1448);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
-    xsi_set_current_line(45, ng0);
-    t2 = (t0 + 2176);
+    xsi_set_current_line(54, ng0);
+    t2 = (t0 + 2656);
     xsi_process_wait(t2, 100000LL);
     *((char **)t1) = &&LAB6;
     goto LAB1;
 
-LAB6:    goto LAB1;
+LAB6:    xsi_set_current_line(55, ng0);
+    t2 = ((char*)((ng2)));
+    t3 = (t0 + 1608);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    xsi_set_current_line(57, ng0);
+    t2 = (t0 + 2656);
+    xsi_process_wait(t2, 2000000LL);
+    *((char **)t1) = &&LAB7;
+    goto LAB1;
+
+LAB7:    xsi_set_current_line(58, ng0);
+    t2 = ((char*)((ng2)));
+    t3 = (t0 + 1768);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    xsi_set_current_line(60, ng0);
+    t2 = (t0 + 2656);
+    xsi_process_wait(t2, 200000LL);
+    *((char **)t1) = &&LAB8;
+    goto LAB1;
+
+LAB8:    xsi_set_current_line(61, ng0);
+    t2 = ((char*)((ng2)));
+    t3 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    xsi_set_current_line(63, ng0);
+    t2 = (t0 + 2656);
+    xsi_process_wait(t2, 200000LL);
+    *((char **)t1) = &&LAB9;
+    goto LAB1;
+
+LAB9:    xsi_set_current_line(64, ng0);
+    t2 = ((char*)((ng1)));
+    t3 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 1);
+    goto LAB1;
 
 }
 
-static void Always_51_1(char *t0)
+static void Always_70_1(char *t0)
 {
     char t3[8];
     char *t1;
@@ -96,22 +142,22 @@ static void Always_51_1(char *t0)
     unsigned int t22;
     char *t23;
 
-LAB0:    t1 = (t0 + 2616U);
+LAB0:    t1 = (t0 + 3096U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(51, ng0);
+LAB2:    xsi_set_current_line(70, ng0);
 
-LAB4:    xsi_set_current_line(52, ng0);
-    t2 = (t0 + 2424);
+LAB4:    xsi_set_current_line(71, ng0);
+    t2 = (t0 + 2904);
     xsi_process_wait(t2, 50000LL);
     *((char **)t1) = &&LAB5;
 
 LAB1:    return;
-LAB5:    xsi_set_current_line(53, ng0);
+LAB5:    xsi_set_current_line(72, ng0);
     t2 = (t0 + 1288);
     t4 = (t2 + 56U);
     t5 = *((char **)t4);
@@ -163,9 +209,9 @@ LAB11:    t17 = *((unsigned int *)t3);
 }
 
 
-extern void work_m_00000000001167592844_2061640220_init()
+extern void work_m_00000000000484985622_2061640220_init()
 {
-	static char *pe[] = {(void *)Initial_37_0,(void *)Always_51_1};
-	xsi_register_didat("work_m_00000000001167592844_2061640220", "isim/Test_DataPath2_isim_beh.exe.sim/work/m_00000000001167592844_2061640220.didat");
+	static char *pe[] = {(void *)Initial_43_0,(void *)Always_70_1};
+	xsi_register_didat("work_m_00000000000484985622_2061640220", "isim/Test_DataPath2_isim_beh.exe.sim/work/m_00000000000484985622_2061640220.didat");
 	xsi_register_executes(pe);
 }

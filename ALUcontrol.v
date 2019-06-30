@@ -78,7 +78,7 @@ end
         Operation <= 4'b0000;
     end
     // for slt
-    if (opcode == 6'b101010)begin
+    if ((ALUop1 == 1'b1) &( funct == 6'b101010))begin
         Operation <= 4'b0111;
     end
     // for always

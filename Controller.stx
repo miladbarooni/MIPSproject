@@ -1,16 +1,16 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/Aria/Desktop/arch_project/MIPSproject/xst/projnav.tmp
+--> Parameter TMPDIR set to D:/Uni/Arch/project/MIPSproject/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
---> Parameter xsthdpdir set to C:/Users/Aria/Desktop/arch_project/MIPSproject/xst
+--> Parameter xsthdpdir set to D:/Uni/Arch/project/MIPSproject/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: Controller.prj
 
@@ -39,12 +39,12 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Aria\Desktop\arch_project\MIPSproject\Controller.v" into library work
+Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\Controller.v" into library work
 Parsing module <Controller>.
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.42 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.39 secs
  
 --> 
 

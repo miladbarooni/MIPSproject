@@ -56,8 +56,8 @@ always @(operation, SrcA, SrcB)begin
   end
 
   if (operation == 4'b0111) begin
-    if (SrcB >= SrcA ) ALUResult <= 0;
-    if (SrcB < SrcA ) ALUResult <= 1;
+    if (SrcB >= SrcA ) ALUResult <= 1;
+    if (SrcB < SrcA ) ALUResult <= 0;
   end
 
   if (SrcA == SrcB) begin

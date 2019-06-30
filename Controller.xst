@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/Aria/Desktop/arch_project/MIPSproject/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Aria/Desktop/arch_project/MIPSproject/xst"
+set -tmpdir "D:/Uni/Arch/project/MIPSproject/xst/projnav.tmp"
+set -xsthdpdir "D:/Uni/Arch/project/MIPSproject/xst"
 run -compileonly yes
 -p xc7a100t-3-csg324
 -top Controller
