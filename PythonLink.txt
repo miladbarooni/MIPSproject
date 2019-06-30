@@ -1,0 +1,1 @@
+	$fwrite($fopen ("test.txt", "a"), "clk:%b,first_carsLights:%b,second_carsLights:%b,first_pedestrianLights:%b,second_pedestrianLights:%b,reg_time:%d-", clk, first_carsLights, second_carsLights, first_pedestrianLights,second_pedestrianLights, reg_time);
