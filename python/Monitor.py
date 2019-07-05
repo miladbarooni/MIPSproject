@@ -4,7 +4,7 @@ import time
 
 
 # first to make memory list
-filename = "Memory.txt"
+filename = r"D:\Uni\Arch\project\MIPSproject\Memory.txt"
 memory = []
 file = open(filename, "r")
 file_str = file.read()
@@ -24,15 +24,15 @@ for moment in file_arr:
 #     print (file_dic)
     memory.append(file_dic)
 
-print (memory)
+#print (memory)
 
 
 root = Tk()
 labels = []
-# memory = []
+memory = memory[0: -1]
 
 # now time for tkinter
-print (len(memory))
+#print (len(memory))
 for i in range(4):
     for j in range(4):
         label = Label(root, text = "test")
@@ -48,5 +48,8 @@ for k in range(len(memory)):
                 labels[4*i+j].config(text = chr(int(memory[k]["Memo"+str(4*i+j+1)])))
     root.update()
 
+#time.sleep(1000)
+#root.destroy()
 root.mainloop()
+
 # root.destroy()

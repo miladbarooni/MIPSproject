@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-07-05T19:32:08</DateModified>
+  <DateModified>2019-07-05T19:43:26</DateModified>
   <ModuleName>DataPath</ModuleName>
   <SummaryTimeStamp>2019-07-03T14:35:53</SummaryTimeStamp>
-  <SavedFilePath>D:/Uni/Arch/project/MIPSproject/Verilog/iseconfig/DataPath.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Uni/Arch/project/MIPSproject/Verilog\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Uni/Arch/project/MIPSproject/iseconfig/DataPath.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Uni/Arch/project/MIPSproject\</ImplementationReportsDirectory>
   <DateInitialized>2019-06-28T16:50:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

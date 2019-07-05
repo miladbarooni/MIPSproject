@@ -102,7 +102,7 @@ initial begin
 	MEMO[320] <= 32'hAC0001FD;
 	MEMO[324] <= 32'h00000020;
 	MEMO[328] <= 32'hAC0001FE;
-  
+	MEMO[324] <= 32'h00000020;
 
    // MONITOR
 	MEMO[495] <= 32'h00000077;

@@ -141,7 +141,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1562336025" xil_pn:in_ck="3359903231815804117" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1562336025">
+    <transform xil_pn:end_ts="1562339688" xil_pn:in_ck="3359903231815804117" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1562339688">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -165,11 +165,11 @@
       <outfile xil_pn:name="Test_DataPath2.v"/>
       <outfile xil_pn:name="WriteData.v"/>
     </transform>
-    <transform xil_pn:end_ts="1562336036" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5282128010949970705" xil_pn:start_ts="1562336036">
+    <transform xil_pn:end_ts="1562339828" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5282128010949970705" xil_pn:start_ts="1562339828">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1562336036" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8266853657858335347" xil_pn:start_ts="1562336036">
+    <transform xil_pn:end_ts="1562339828" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8266853657858335347" xil_pn:start_ts="1562339828">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -177,7 +177,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1562336025" xil_pn:in_ck="3359903231815804117" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1562336025">
+    <transform xil_pn:end_ts="1562339688" xil_pn:in_ck="3359903231815804117" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1562339688">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -201,9 +201,11 @@
       <outfile xil_pn:name="Test_DataPath2.v"/>
       <outfile xil_pn:name="WriteData.v"/>
     </transform>
-    <transform xil_pn:end_ts="1562336038" xil_pn:in_ck="3359903231815804117" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8442575254941617747" xil_pn:start_ts="1562336036">
+    <transform xil_pn:end_ts="1562339831" xil_pn:in_ck="3359903231815804117" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8442575254941617747" xil_pn:start_ts="1562339828">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Test_DataPath2_beh.prj"/>
       <outfile xil_pn:name="Test_DataPath2_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -211,9 +213,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1562336039" xil_pn:in_ck="4973515560511365052" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8768861164695209456" xil_pn:start_ts="1562336038">
+    <transform xil_pn:end_ts="1562339831" xil_pn:in_ck="4973515560511365052" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8768861164695209456" xil_pn:start_ts="1562339831">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Test_DataPath2_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
