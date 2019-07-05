@@ -6,7 +6,6 @@ import os
 filename = "Data.txt"
 directory = r"D:\Uni\Arch\project\MIPSproject"
 
-
 fullpath = os.path.join(directory, filename)
 
 
@@ -29,8 +28,31 @@ for moment in file_arr:
         file_dic[value_arr[0]] = value_arr[1]
     list_of_dics.append(file_dic)
 
-#bpy.data.objects["Text.021"].data.body = str(list_of_dics)
+filename = "RegFile.txt"
+directory = r"D:\Uni\Arch\project\MIPSproject"
 
+fullpath = os.path.join(directory, filename)
+
+
+file2 = open(fullpath, "r")
+file2_str = file2.read()
+file2_str = file2_str.replace(" ", "")
+file2_arr = file2_str.split("-")
+
+
+list_of_registers = []
+
+for moment in file2_arr:
+    reg_dic = {}
+    moment_arr = moment.split(',')
+    for value in moment_arr:
+        value_arr = value.split(':')
+        if (len(value_arr) == 1):
+            continue
+        reg_dic[value_arr[0]] = value_arr [1]
+    list_of_registers.append(reg_dic)
+
+#bpy.data.objects["Text.022"].data.body = str(list_of_registers[0]["Reg1"])
 
 clock_list = ["Cube.102", "Cube.103", "Cube.104", "Cube.105", "Cube.106", "Cube.107", "Cube.108", "Cube.109"]
 
@@ -80,7 +102,7 @@ dictionary_length = len(list_of_dics)
 bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1)
 while(dictionary_index < dictionary_length):
     
-    if (time.clock() - start < 0.1): continue
+    if (time.clock() - start < 0.01): continue
     
     
     
@@ -215,7 +237,13 @@ while(dictionary_index < dictionary_length):
                 else:
                     obj = bpy.data.objects[wire]
                     obj.active_material.diffuse_color = (0, 0, 1)
-                    
+        temp_str = ""    
+        for i in range(32):
+            temp_str += "Reg " + str(i) + ":\t"
+            temp_str += str(list_of_registers[dictionary_index]["Reg" + str(i+1)])
+            temp_str += "\n"
+              
+        bpy.data.objects["Text.022"].data.body = temp_str            
         intr_str =  "INT:\t\t"
         intr_str += list_of_dics[dictionary_index]["INT"]
         intr_str +=  "\nINTD:\t"
@@ -227,7 +255,7 @@ while(dictionary_index < dictionary_length):
     if color == (0,0, 1):
         dictionary_index += 1             
     bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=1)   
-    if (repetitions > 200): break
+    if (repetitions > 500): break
 
 
 
