@@ -41,7 +41,7 @@ module DataPath(
 	wire RegDst;
 	wire MemtoReg;
 	wire [1:0] ALUOp;
-
+ 
 	// datapath variables
 	wire [31:0] PC_in;
 	wire Zero; 
@@ -64,6 +64,7 @@ module DataPath(
 	wire [3:0] Operation;
 	wire [31:0] ALUResult;
 	wire reset;
+	wire [3:0] state;
 
 	Initializer Initializer1 (
 		 .initiate(initiate),  
@@ -129,7 +130,8 @@ module DataPath(
     .RegWrite(RegWrite), 
     .RegDst(RegDst), 
     .PCEn(PCEn), 
-    .ALUOp(ALUOp)
+    .ALUOp(ALUOp),
+	 .state(state)
     );
 	 
 	 
@@ -157,7 +159,8 @@ module DataPath(
     .A3(A3), 
     .WD3(WD3), 
     .RD1(RD1), 
-    .RD2(RD2)
+    .RD2(RD2),
+	 .state(state)
     );
 
 
@@ -228,14 +231,6 @@ module DataPath(
     .out(PC_in)
     );
 
-
-
-
-
-
-
-
-
-		 
+	 
 		 
 endmodule 

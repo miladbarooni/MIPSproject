@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Controller (clk, reset, Op, Zero, INT, INTD, NMI, IorD, MemWrite, MemtoReg, IRWrite,
-PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
+PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp, state);
 
 
 
@@ -42,15 +42,18 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 	output reg [1:0] ALUSrcB;
 	output wire PCEn;
 	output reg [1:0] ALUOp;
-	
 	reg NMI_FLAG;
-
+	integer append_file;
 	initial begin
+		
 		NMI_FLAG = 0;
+		
+		
 	end
 
 	reg PCWrite;
 	reg PCWriteCond; 
+	
 
 	assign
 		PCEn = (PCWrite | (PCWriteCond & Zero));
@@ -70,21 +73,22 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 	parameter INTERRUPT_2 = 4'b1110;
 	parameter NMI_INTERRUPT = 4'b1101;
 
-	reg [3:0] state;
+	output reg [3:0] state;
 	reg [3:0] nextstate;
 
   always@(posedge NMI) begin
 		NMI_FLAG = 1;
+		
   end
   
 
-  always@(posedge clk)
+  always@(posedge clk)begin
     if (reset)
 		state <= FETCH;
       else
 		state <= nextstate;
-
-
+		
+end
 	always@(state or Op) begin
       	case (state)
 			
@@ -190,7 +194,9 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 
 
 	always@(state) begin
-
+	append_file = $fopen("Data.txt", "a");
+	$fwrite(append_file, "PCEn:%b,PCWrite:%b,Branch:%b,PCSrc:%b,ALUOp:%b,ALUSrcB:%b,ALUSrcA:%b,RegWrite:%b,IorD:%b,MemWrite:%b,IRWrite:%b,State:%b,INT:%b,INTB:%b,NMI:%b-", PCEn, PCWrite, PCWriteCond, PCSrc, ALUOp, ALUSrcB, ALUSrcA, RegWrite, IorD, MemWrite, IRWrite, state, INT, INTD, NMI);
+	$fclose (append_file);
 	IorD=1'b0; MemWrite=1'b0; MemtoReg=1'b0; IRWrite=1'b0; PCSrc=1'b0;
 	ALUSrcB=2'b00; ALUSrcA=1'b0; RegWrite=1'b0; RegDst=1'b0; PCWrite=1'b0; PCWriteCond=1'b0; ALUOp=2'b00;
 
@@ -209,7 +215,7 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 			begin
 				IRWrite = 0;
 				RegWrite = 0;
-				MemWrite = 0;
+				MemWrite = 0; 
 				PCWrite = 0;
 				PCWriteCond = 0;
 				ALUSrcA  = 1;
@@ -273,5 +279,6 @@ PCSrc, ALUSrcB, ALUSrcA, RegWrite, RegDst, PCEn, ALUOp);
 	    PCSrc = 2'b01;
           end
       endcase
+		
     end
 endmodule

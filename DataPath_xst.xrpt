@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sun Jun 30 13:36:17 2019">
+  <application stringID="Xst" timeStamp="Fri Jul 05 18:17:26 2019">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\Programs\14.7\ISE_DS\ISE\\lib\nt64;D:\Programs\14.7\ISE_DS\ISE\\bin\nt64;D:\Programs\14.7\ISE_DS\ISE\bin\nt64;D:\Programs\14.7\ISE_DS\ISE\lib\nt64;D:\Programs\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Programs\14.7\ISE_DS\PlanAhead\bin;D:\Programs\14.7\ISE_DS\EDK\bin\nt64;D:\Programs\14.7\ISE_DS\EDK\lib\nt64;D:\Programs\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Programs\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Programs\14.7\ISE_DS\EDK\gnuwin\bin;D:\Programs\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Programs\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Programs\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Programs\14.7\ISE_DS\common\bin\nt64;D:\Programs\14.7\ISE_DS\common\lib\nt64;C:\Program Files\MinGW\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\WinMerge;c:\users\aria\desktop\;D:\Programs\Mathlab\runtime\win64;D:\Programs\Mathlab\bin;C:\Users\Aria\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Aria\AppData\Local\Programs\Python\Python37-32\;C:\Users\Aria\AppData\Local\Microsoft\WindowsApps;C:\Users\Aria\AppData\Local\atom\bin;C:\Users\Aria\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.3.2\bin;C:\Program Files\JetBrains\CLion 2018.3.4\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.4\bin"/>
+          <item stringID="value" value="D:\Programs\14.7\ISE_DS\ISE\\lib\nt64;D:\Programs\14.7\ISE_DS\ISE\\bin\nt64;D:\Programs\14.7\ISE_DS\ISE\bin\nt64;D:\Programs\14.7\ISE_DS\ISE\lib\nt64;D:\Programs\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Programs\14.7\ISE_DS\PlanAhead\bin;D:\Programs\14.7\ISE_DS\EDK\bin\nt64;D:\Programs\14.7\ISE_DS\EDK\lib\nt64;D:\Programs\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Programs\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Programs\14.7\ISE_DS\EDK\gnuwin\bin;D:\Programs\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Programs\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Programs\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Programs\14.7\ISE_DS\common\bin\nt64;D:\Programs\14.7\ISE_DS\common\lib\nt64;c:\program files\mingw\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin;c:\program files (x86)\common files\oracle\java\javapath;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files\microsoft sql server\130\tools\binn\;c:\program files\dotnet\;c:\program files\git\cmd;c:\program files\winmerge;c:\users\aria\desktop\;d:\programs\mathlab\runtime\win64;d:\programs\mathlab\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Aria\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Aria\AppData\Local\Programs\Python\Python37-32\;C:\Users\Aria\AppData\Local\Microsoft\WindowsApps;C:\Users\Aria\AppData\Local\atom\bin;C:\Users\Aria\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.3.2\bin;C:\Program Files\JetBrains\CLion 2018.3.4\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.4\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -129,7 +129,7 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="25"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="42"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="0"/>
     </section>
   </application>

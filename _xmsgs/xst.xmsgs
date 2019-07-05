@@ -5,5 +5,131 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="817" delta="new" >"D:\Uni\Arch\project\MIPSproject\Memory.v" Line 117: System task <arg fmt="%s" index="1">fwrite</arg> ignored for synthesis
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="817" delta="new" >"D:\Uni\Arch\project\MIPSproject\Memory.v" Line 118: System task <arg fmt="%s" index="1">fclose</arg> ignored for synthesis
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Uni\Arch\project\MIPSproject\Memory.v" Line 115: Assignment to <arg fmt="%s" index="1">append_file</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 102: Signal &lt;<arg fmt="%s" index="1">INT</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 113: Signal &lt;<arg fmt="%s" index="1">INT</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 147: Signal &lt;<arg fmt="%s" index="1">INT</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 153: Signal &lt;<arg fmt="%s" index="1">NMI_FLAG</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 158: Signal &lt;<arg fmt="%s" index="1">INT</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 164: Signal &lt;<arg fmt="%s" index="1">NMI_FLAG</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 170: Signal &lt;<arg fmt="%s" index="1">INT</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 176: Signal &lt;<arg fmt="%s" index="1">NMI_FLAG</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 181: Signal &lt;<arg fmt="%s" index="1">INT</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 187: Signal &lt;<arg fmt="%s" index="1">NMI_FLAG</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="817" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 198: System task <arg fmt="%s" index="1">fwrite</arg> ignored for synthesis
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="817" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 199: System task <arg fmt="%s" index="1">fclose</arg> ignored for synthesis
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Uni\Arch\project\MIPSproject\Controller.v" Line 196: Assignment to <arg fmt="%s" index="1">append_file</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="817" delta="new" >"D:\Uni\Arch\project\MIPSproject\Regfile.v" Line 51: System task <arg fmt="%s" index="1">fwrite</arg> ignored for synthesis
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="817" delta="new" >"D:\Uni\Arch\project\MIPSproject\Regfile.v" Line 52: System task <arg fmt="%s" index="1">fclose</arg> ignored for synthesis
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Uni\Arch\project\MIPSproject\Regfile.v" Line 49: Assignment to <arg fmt="%s" index="1">append_file</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\RegfileOut.v" Line 29: Signal &lt;<arg fmt="%s" index="1">A</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\RegfileOut.v" Line 30: Signal &lt;<arg fmt="%s" index="1">B</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\ALUcontrol.v" Line 69: Signal &lt;<arg fmt="%s" index="1">opcode</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\ALUcontrol.v" Line 73: Signal &lt;<arg fmt="%s" index="1">opcode</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\Uni\Arch\project\MIPSproject\ALUcontrol.v" Line 77: Signal &lt;<arg fmt="%s" index="1">opcode</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">69</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Initializer1</arg>&gt; of block &lt;<arg fmt="%s" index="4">Initializer</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">77</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">PC1</arg>&gt; of block &lt;<arg fmt="%s" index="4">PC</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">85</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MemMux1</arg>&gt; of block &lt;<arg fmt="%s" index="4">MemMux</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">93</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Memory1</arg>&gt; of block &lt;<arg fmt="%s" index="4">Memory</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">101</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">IR1</arg>&gt; of block &lt;<arg fmt="%s" index="4">IR</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">108</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">WriteData1</arg>&gt; of block &lt;<arg fmt="%s" index="4">WriteData</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">115</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Controller1</arg>&gt; of block &lt;<arg fmt="%s" index="4">Controller</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">138</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">RegDstMux1</arg>&gt; of block &lt;<arg fmt="%s" index="4">RegDstMux</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">146</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">MemtoRegMux1</arg>&gt; of block &lt;<arg fmt="%s" index="4">MemtoRegMux</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">154</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">Regfile1</arg>&gt; of block &lt;<arg fmt="%s" index="4">Regfile</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">168</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">SignEx1</arg>&gt; of block &lt;<arg fmt="%s" index="4">SignEx</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">175</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">RegfileOut1</arg>&gt; of block &lt;<arg fmt="%s" index="4">RegfileOut</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">184</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">SrcAMux1</arg>&gt; of block &lt;<arg fmt="%s" index="4">SrcAMux</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">192</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">SrcBMux2</arg>&gt; of block &lt;<arg fmt="%s" index="4">SrcBMux</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">201</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">ALUcontrol1</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALUcontrol</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">211</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">ALU1</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALU</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">220</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">ALUout1</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALUout</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">D:\Uni\Arch\project\MIPSproject\DataPath.v</arg>&quot; line <arg fmt="%d" index="2">227</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">ALUOutMux1</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALUOutMux</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DataPath</arg>&gt;. Underlying logic will be removed.
+</msg>
+
 </messages>
 

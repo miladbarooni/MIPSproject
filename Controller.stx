@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to D:/Uni/Arch/project/MIPSproject/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: Controller.prj
 
@@ -43,8 +43,8 @@ Analyzing Verilog file "D:\Uni\Arch\project\MIPSproject\Controller.v" into libra
 Parsing module <Controller>.
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.39 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.30 secs
  
 --> 
 

@@ -157,20 +157,37 @@ Elaborating module <PC>.
 Elaborating module <MemMux>.
 
 Elaborating module <Memory>.
+WARNING:HDLCompiler:817 - "D:\Uni\Arch\project\MIPSproject\Memory.v" Line 117: System task fwrite ignored for synthesis
+WARNING:HDLCompiler:817 - "D:\Uni\Arch\project\MIPSproject\Memory.v" Line 118: System task fclose ignored for synthesis
+WARNING:HDLCompiler:1127 - "D:\Uni\Arch\project\MIPSproject\Memory.v" Line 115: Assignment to append_file ignored, since the identifier is never used
 
 Elaborating module <IR>.
 
 Elaborating module <WriteData>.
 
 Elaborating module <Controller>.
-WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 93: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 103: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 102: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 113: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 147: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 153: Signal <NMI_FLAG> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 158: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 164: Signal <NMI_FLAG> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 170: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 176: Signal <NMI_FLAG> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 181: Signal <INT> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 187: Signal <NMI_FLAG> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:817 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 198: System task fwrite ignored for synthesis
+WARNING:HDLCompiler:817 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 199: System task fclose ignored for synthesis
+WARNING:HDLCompiler:1127 - "D:\Uni\Arch\project\MIPSproject\Controller.v" Line 196: Assignment to append_file ignored, since the identifier is never used
 
 Elaborating module <RegDstMux>.
 
 Elaborating module <MemtoRegMux>.
 
 Elaborating module <Regfile>.
+WARNING:HDLCompiler:817 - "D:\Uni\Arch\project\MIPSproject\Regfile.v" Line 51: System task fwrite ignored for synthesis
+WARNING:HDLCompiler:817 - "D:\Uni\Arch\project\MIPSproject\Regfile.v" Line 52: System task fclose ignored for synthesis
+WARNING:HDLCompiler:1127 - "D:\Uni\Arch\project\MIPSproject\Regfile.v" Line 49: Assignment to append_file ignored, since the identifier is never used
 
 Elaborating module <SignEx>.
 
@@ -192,24 +209,24 @@ Elaborating module <ALU>.
 Elaborating module <ALUout>.
 
 Elaborating module <ALUOutMux>.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 68. All outputs of instance <Initializer1> of block <Initializer> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 76. All outputs of instance <PC1> of block <PC> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 84. All outputs of instance <MemMux1> of block <MemMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 92. All outputs of instance <Memory1> of block <Memory> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 100. All outputs of instance <IR1> of block <IR> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 107. All outputs of instance <WriteData1> of block <WriteData> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 114. All outputs of instance <Controller1> of block <Controller> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 136. All outputs of instance <RegDstMux1> of block <RegDstMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 144. All outputs of instance <MemtoRegMux1> of block <MemtoRegMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 152. All outputs of instance <Regfile1> of block <Regfile> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 165. All outputs of instance <SignEx1> of block <SignEx> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 172. All outputs of instance <RegfileOut1> of block <RegfileOut> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 181. All outputs of instance <SrcAMux1> of block <SrcAMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 189. All outputs of instance <SrcBMux2> of block <SrcBMux> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 198. All outputs of instance <ALUcontrol1> of block <ALUcontrol> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 208. All outputs of instance <ALU1> of block <ALU> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 217. All outputs of instance <ALUout1> of block <ALUout> are unconnected in block <DataPath>. Underlying logic will be removed.
-WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 224. All outputs of instance <ALUOutMux1> of block <ALUOutMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 69. All outputs of instance <Initializer1> of block <Initializer> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 77. All outputs of instance <PC1> of block <PC> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 85. All outputs of instance <MemMux1> of block <MemMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 93. All outputs of instance <Memory1> of block <Memory> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 101. All outputs of instance <IR1> of block <IR> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 108. All outputs of instance <WriteData1> of block <WriteData> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 115. All outputs of instance <Controller1> of block <Controller> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 138. All outputs of instance <RegDstMux1> of block <RegDstMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 146. All outputs of instance <MemtoRegMux1> of block <MemtoRegMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 154. All outputs of instance <Regfile1> of block <Regfile> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 168. All outputs of instance <SignEx1> of block <SignEx> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 175. All outputs of instance <RegfileOut1> of block <RegfileOut> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 184. All outputs of instance <SrcAMux1> of block <SrcAMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 192. All outputs of instance <SrcBMux2> of block <SrcBMux> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 201. All outputs of instance <ALUcontrol1> of block <ALUcontrol> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 211. All outputs of instance <ALU1> of block <ALU> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 220. All outputs of instance <ALUout1> of block <ALUout> are unconnected in block <DataPath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Uni\Arch\project\MIPSproject\DataPath.v" line 227. All outputs of instance <ALUOutMux1> of block <ALUOutMux> are unconnected in block <DataPath>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -343,13 +360,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.82 secs
+Total CPU time to Xst completion: 10.21 secs
  
 --> 
 
-Total memory usage is 466700 kilobytes
+Total memory usage is 466608 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   25 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

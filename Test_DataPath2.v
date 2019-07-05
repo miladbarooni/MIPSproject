@@ -50,18 +50,18 @@ module Test_DataPath2;
 
 		// Wait 100 ns for global reset to finish
 		#60;
-		initiate = 1;
+	 initiate = 1;
 		#100;
 		INT = 1;
 		
-		#2000;
+		#1000;
 		INTD = 1;
-		
-		#200;
-		NMI = 1;
-		
-		#200;
-		NMI = 0;
+		 
+		//#200;
+		//NMI = 1;
+		 
+		//#200;
+		//NMI = 0;
         
 		// Add stimulus here
 
