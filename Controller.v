@@ -121,12 +121,7 @@ end
 		  
         FETCH:  
 		  begin
-				//if (INT & (~INTD)) begin
-				//nextstate = INTERRUPT;
-				//end
-				//else begin
 				nextstate = DECODE;
-				//end
 		  end
         DECODE:  case(Op)
 					//OpCode

@@ -30,14 +30,19 @@ end
 
 
     always @(ALUop1, ALUop0, funct) begin
-      if ((ALUop1 == 1'b0) & (ALUop0 == 1'b0)) begin
-      Operation <= 3'b010;
+      if ((ALUop1 == 1'b0) & (ALUop0 == 1'b0)) begin // load and store
+      Operation <= 3'b010; // add
     end
 
-    if (ALUop0 == 1'b1) begin
-      Operation <= 4'b0110;
+    if (ALUop0 == 1'b1) begin // branch equal
+      Operation <= 4'b0110; // subtract
     end
-
+	 
+	 // R-type
+	 
+    if ((ALUop1 == 1'b1) &( funct == 6'b101010))begin // slt
+        Operation <= 4'b0111;
+    end
     if ((ALUop1 == 1'b1) & (funct[0] == 1'b0) & (funct[1] == 1'b0) & (funct[2] == 1'b0) & (funct[3] == 1'b0))begin
       Operation <= 4'b0010;
     end
@@ -77,11 +82,7 @@ end
     if (opcode == 6'b001100) begin
         Operation <= 4'b0000;
     end
-    // for slt
-    if ((ALUop1 == 1'b1) &( funct == 6'b101010))begin
-        Operation <= 4'b0111;
-    end
-    // for always
+
     end
 endmodule
 
